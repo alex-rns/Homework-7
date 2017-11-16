@@ -1,0 +1,29 @@
+.icon
+  display: flex
+  position: relative
+  &-item
+    border-radius: 50%
+    background: $accent-color
+    padding: 20px
+    text-align: center
+  &:before
+    width: 22px
+    height: 22px
+    align-self: center
+    left: 50%
+    transform: translateX(-50%)
+    z-index: 10
+    font-family: FontAwesome, sans-serif
+    position: absolute
+
+  &-heart
+    &:before
+      content: "\f004"
+
+  &-search
+    &:before
+      content: "\f00e"
+
+  &-link
+    &:before
+      content: "\f0c1"

@@ -1,5 +1,5 @@
-
 .button
+  transition: $transition
   font-weight: 100
   text-transform: uppercase
   padding: 5px 20px
@@ -38,5 +38,19 @@
 
   &-welcome
     margin: 10% 1%
+
   &-mb
     margin-bottom: 100px
+
+  &-amber
+    border-color: $white-text
+    &:link, &:visited
+      color: $white-text
+    &:hover
+      background: $white-text
+      &:link, &:visited
+        color: $accent-color
+  &-icon
+    i
+      padding-left: 15px
+

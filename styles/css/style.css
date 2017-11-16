@@ -7306,6 +7306,9 @@ a:hover, a:focus {
   background: none; }
 
 .button {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   font-weight: 100;
   text-transform: uppercase;
   padding: 5px 20px;
@@ -7339,6 +7342,16 @@ a:hover, a:focus {
     margin: 10% 1%; }
   .button-mb {
     margin-bottom: 100px; }
+  .button-amber {
+    border-color: #fff; }
+    .button-amber:link, .button-amber:visited {
+      color: #fff; }
+    .button-amber:hover {
+      background: #fff; }
+      .button-amber:hover:link, .button-amber:hover:visited {
+        color: #02baab; }
+  .button-icon i {
+    padding-left: 15px; }
 
 .navbar-wrap {
   background: #474747; }
@@ -7466,8 +7479,19 @@ a:hover, a:focus {
   .bg-image-latest-work {
     background-image: url("../../../images/bg-1680x740.png"); }
 
+.amber {
+  color: #fff;
+  background: #02baab; }
+
 .card-img-overlay {
   padding: 0; }
+  .card-img-overlay .icon-list {
+    display: none; }
+  .card-img-overlay:hover .icon-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
 
 .card-bottom {
   background: #3d3d3d; }
@@ -7477,11 +7501,21 @@ a:hover, a:focus {
   font-size: 11px; }
 
 .card {
+  position: relative;
   border: none; }
   .card-img-top {
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    opacity: 0.6;
     border-radius: 0; }
+  .card:hover .card-img-top {
+    opacity: 1; }
+  .card:hover .card-text-wrap, .card:hover .like {
+    display: none; }
 
 .like {
+  font-size: 11px;
   color: #02baab;
   position: relative; }
   .like:before {
@@ -7490,7 +7524,38 @@ a:hover, a:focus {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: 40px;
+    bottom: 37px;
     position: absolute;
     font-family: FontAwesome,sans-serif;
     content: "\f004"; }
+
+.icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+  .icon-item {
+    border-radius: 50%;
+    background: #02baab;
+    padding: 20px;
+    text-align: center; }
+  .icon:before {
+    width: 22px;
+    height: 22px;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 10;
+    font-family: FontAwesome, sans-serif;
+    position: absolute; }
+  .icon-heart:before {
+    content: "\f004"; }
+  .icon-search:before {
+    content: "\f00e"; }
+  .icon-link:before {
+    content: "\f0c1"; }
