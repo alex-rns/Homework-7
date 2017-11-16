@@ -1,0 +1,17 @@
+.colored-border
+  position: relative
+
+  &:before
+    content: ""
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+
+@each $color-list, $name-color in ($yellow, yellow), ($orange, orange), ($rose, rose), ($pink, pink), ($violet, violet), ($navy-blue, navy-blue), ($blue, blue)
+
+  .colored-border-#{$name-color}:before
+    border-top: 10px $color-list solid
+
+  .navbar-light .colored-border-#{$name-color} .nav-link:focus, .navbar-light .colored-border-#{$name-color} .nav-link:hover
+    color: $color-list

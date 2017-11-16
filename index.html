@@ -2,23 +2,190 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <title>Homework#6</title>
+  <title>Homework#7</title>
   <meta name="description" content="GeekHub - Frontend+JS, 7 season, Homework#7, Belodubrovsky"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
-  <link rel="stylesheet" href="styles/css/bootstrap.css"/>
   <link rel="stylesheet" type="text/css" href="styles/css/style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="styles/css/font-awesome.min.css">
 </head>
+
 <body>
 <div class="wrapper">
-  <div class="container">
-    234234
-  </div>
+  <header>
+    <div class="top-header ">
+        <div class="d-flex align-items-center container">
+        <input class="input-search" type="text" placeholder="Search">
+         <button class="button-search btn" type="submit">
+           <i class="fa fa-search fa-fw"></i>
+         </button>
+         <div class="button-top-login ml-auto pull-right">
+           <a>
+             <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+             Login</a>
+           <a href="#">
+             <i class="fa fa-pencil" aria-hidden="true"></i>
+             Register</a>
+         </div>
+        </div>
+    </div>
+
+    <div class="navbar-wrap">
+      <nav class="navbar navbar-toggleable-md navbar-light container p-0">
+        <button class="navbar-toggler navbar-toggler-right m-1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img class="img-fluid" src="images/logo.png" alt="Amber">
+        </a>
+        <h1 class="over-text-indent">Amber</h1>
+        <div class="collapse navbar-collapse upper-text" id="navbarNav">
+          <ul class="navbar-nav ml-auto align-c">
+            <li class="nav-item colored-border colored-border-yellow">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item colored-border colored-border-orange">
+              <a class="nav-link" href="#">Typography</a>
+            </li>
+            <li class="nav-item colored-border colored-border-rose">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item colored-border colored-border-pink">
+              <a class="nav-link" href="#">Pages</a>
+            </li>
+            <li class="nav-item colored-border colored-border-violet">
+              <a class="nav-link" href="#">Elements</a>
+            </li>
+            <li class="nav-item colored-border colored-border-navy-blue">
+              <a class="nav-link" href="#">eCommerse</a>
+            </li>
+            <li class="nav-item colored-border colored-border-blue">
+              <a class="nav-link" href="#">Mega menu</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="welcome-section">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active mh-100">
+          <img class="d-block img-fluid" src="images/slide-2.png" alt="First slide">
+          <div class="welcome-message carousel-caption d-none d-block">
+            <h2><span>Creating a unique look.</span></h2>
+            <h2>Never been easier.</h2>
+              <a class="btn button button-color button-welcome" href="#">See features</a>
+              <a class="btn button button-transparent button-welcome" href="#">Purchase now</a>
+          </div>
+        </div>
+        <div class="carousel-item mh-100">
+          <img class="d-block img-fluid" src="images/slide-3.png" alt="Second slide">
+          <div class="welcome-message carousel-caption d-none d-block">
+            <h2><span>Creating a unique look.</span></h2>
+            <h2>Never been easier.</h2>
+            <a class="btn button button-color button-welcome" href="#">See features</a>
+            <a class="btn button button-transparent button-welcome" href="#">Purchase now</a>
+          </div>
+        </div>
+        <div class="carousel-item mh-100">
+          <img class="d-block img-fluid" src="images/slide-1.png" alt="Third slide">
+          <div class="welcome-message carousel-caption d-none d-block">
+            <h2><span>Creating a unique look.</span></h2>
+            <h2>Never been easier.</h2>
+            <a class="btn button button-color button-welcome" href="#">See features</a>
+            <a class="btn button button-transparent button-welcome" href="#">Purchase now</a>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <!-------------------------Steal of the month----------------------------------->
+  <section class="text-center">
+    <header class="section-header">
+      <h3 class="separate-line-white-bg">Steal of the month</h3>
+      <p>That we can tuck in our children at night and know that they are fed and clothed and safe from harm. Our trials and triumphs became at once unique and universal.</p>
+    </header>
+    <a href="#" class="btn button button-transparent button-mb">Purchase now</a>
+  </section>
+  <!-------------------------Latest works----------------------------------------->
+  <section class="text-center colored-section  bg-image bg-image-latest-work">
+    <header class="section-header">
+      <h3 class="separate-line-color-bg">Latest works</h3>
+      <p>That we can tuck in our children at night and know that they are fed and clothed and safe from harm. Our trials and triumphs became at once unique and universal.</p>
+    </header>
+
+    <div class="container">
+      <div class="row">
+
+        <a class="card col-sm p-0 m-2">
+          <img class="card-img-top img-fluid" src="images/290x290.png" alt="Card image">
+          <div class="card-img-overlay d-flex flex-column-reverse">
+            <div class="card-bottom text-left pl-3 d-flex align-items-center justify-content-between">
+              <div class="card-text-wrap ">
+                <p class="card-title mb-0 pt-2">Lindemans Wine</p>
+                <p class="card-text pb-2">Art Direction, Web Design</p>
+              </div>
+              <span class="p-3 like mt-4">257</span>
+            </div>
+          </div>
+        </a>
+        <a class="card col-sm p-0 m-2">
+          <img class="card-img-top img-fluid" src="images/290x290.png" alt="Card image">
+          <div class="card-img-overlay d-flex flex-column-reverse">
+            <div class="card-bottom text-left pl-3 d-flex align-items-center justify-content-between">
+              <div class="card-text-wrap ">
+                <p class="card-title mb-0 pt-2">Lindemans Wine</p>
+                <p class="card-text pb-2">Art Direction, Web Design</p>
+              </div>
+              <span class="p-3 like mt-4">257</span>
+            </div>
+          </div>
+        </a>
+        <a class="card col-sm p-0 m-2">
+          <img class="card-img-top img-fluid" src="images/290x290.png" alt="Card image">
+          <div class="card-img-overlay d-flex flex-column-reverse">
+            <div class="card-bottom text-left pl-3 d-flex align-items-center justify-content-between">
+              <div class="card-text-wrap ">
+                <p class="card-title mb-0 pt-2">Lindemans Wine</p>
+                <p class="card-text pb-2">Art Direction, Web Design</p>
+              </div>
+              <span class="p-3 like mt-4">257</span>
+            </div>
+          </div>
+        </a>
+        <div class="w-100"></div>
+
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
 </div>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<footer>footer</footer>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
 </html>

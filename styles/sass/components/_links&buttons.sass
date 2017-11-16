@@ -1,0 +1,42 @@
+
+.button
+  font-weight: 100
+  text-transform: uppercase
+  padding: 5px 20px
+  border-radius: 0
+  &:link, &:visited
+    font-weight: 700
+  &-top-login
+    a
+      font-size: 14px
+      margin-left: 2.143rem
+
+  &-search
+    background: none
+    border: none
+    color: $top-header-text-color
+    margin-left: -48px
+    outline: none
+
+  &-color
+    border: $accent-color 3px solid
+    background: $accent-color
+
+    &:hover
+      background: inherit
+      color: $accent-color
+
+  &-transparent
+    border: $accent-color 3px solid
+    &:link, &:visited
+      color: $accent-color
+
+    &:hover
+      background: $accent-color
+      &:link, &:visited
+        color: $white-text
+
+  &-welcome
+    margin: 10% 1%
+  &-mb
+    margin-bottom: 100px
