@@ -7325,7 +7325,7 @@ h4 {
     background: none;
     border: none;
     color: #85939f;
-    margin-left: -48px;
+    margin-left: -32px;
     outline: none; }
   .button-color {
     border: #02baab 3px solid;
@@ -7520,14 +7520,14 @@ h4 {
     transform: translate(-50%, -50%);
     font-family: FontAwesome, sans-serif;
     position: absolute; }
-  .icon-circle {
+  .icon-circle-small {
     -webkit-transition: background 1s ease;
     -o-transition: background 1s ease;
     transition: background 1s ease;
     border-radius: 50%;
     background: #02baab;
     padding: 20px; }
-    .icon-circle:hover {
+    .icon-circle-small:hover {
       background: #fff;
       color: #02baab; }
   .icon-top:before {
@@ -7542,10 +7542,16 @@ h4 {
     color: #02baab; }
   .icon-white-color:before {
     color: #fff; }
+  .icon-search:before {
+    content: "\f002"; }
+  .icon-pencil:before {
+    content: "\f040"; }
   .icon-heart:before {
     content: "\f004"; }
-  .icon-search:before {
+  .icon-search-plus:before {
     content: "\f00e"; }
+  .icon-user:before {
+    content: "\f2be"; }
   .icon-link:before {
     content: "\f0c1"; }
   .icon-like:before {
@@ -7569,7 +7575,7 @@ h4 {
     top: 40px;
     left: 0; }
   .icon-expirience:before {
-    font-size: 50px;
+    font-size: 60px;
     width: 38px;
     height: 38px; }
 

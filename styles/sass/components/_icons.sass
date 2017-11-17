@@ -10,7 +10,7 @@
     font-family: FontAwesome, sans-serif
     position: absolute
 
-  &-circle
+  &-circle-small
     transition: background 1s ease
     border-radius: 50%
     background: $accent-color
@@ -37,13 +37,25 @@
     &:before
       color: $white-text
 
+  &-search
+    &:before
+      content: "\f002"
+
+  &-pencil
+    &:before
+      content: "\f040"
+
   &-heart
     &:before
       content: "\f004"
 
-  &-search
+  &-search-plus
     &:before
       content: "\f00e"
+
+  &-user
+    &:before
+      content: "\f2be"
 
   &-link
     &:before
@@ -87,6 +99,6 @@
 
   &-expirience
     &:before
-      font-size: 50px
+      font-size: 60px
       width: 38px
       height: 38px
