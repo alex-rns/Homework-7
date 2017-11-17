@@ -7384,6 +7384,21 @@ h4 {
 .carousel-indicators .active {
   background-color: #02baab; }
 
+.carousel-blockqoute .carousel-caption {
+  bottom: 110px; }
+
+.carousel-blockqoute .carousel-indicators {
+  bottom: 70px; }
+  .carousel-blockqoute .carousel-indicators li {
+    margin: 0 10px;
+    max-width: 8px;
+    height: 8px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff; }
+    .carousel-blockqoute .carousel-indicators li.active, .carousel-blockqoute .carousel-indicators li:hover {
+      background-color: #02baab; }
+
 .welcome-message {
   top: 40%; }
   .welcome-message h2 {

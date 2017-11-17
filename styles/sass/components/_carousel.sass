@@ -1,8 +1,26 @@
 .carousel
   &-top
     &-inner
+
       height: calc(100vh - 120px)
       min-height: 650px
+
   &-indicators
     .active
       background-color: $accent-color
+
+  &-blockqoute
+    .carousel-caption
+      bottom: 110px
+
+    .carousel-indicators
+      bottom: 70px
+      li
+        margin: 0 10px
+        max-width: 8px
+        height: 8px
+        border: none
+        border-radius: 50%
+        background-color: $white-text
+        &.active, &:hover
+          background-color: $accent-color
