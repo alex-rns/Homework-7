@@ -7290,10 +7290,6 @@ h4 {
   font-family: "FontAwesome";
   src: url(../../fonts/FontAwesome/fontawesome-webfont.woff), url(../../fonts/FontAwesome/fontawesome-webfont.eot); }
 
-.top-header {
-  background: #000000;
-  color: #85939f; }
-
 .input::-webkit-input-placeholder {
   font: 300 1rem/2.5rem "Oxygen", sans-serif;
   color: #85939f; }
@@ -7399,14 +7395,6 @@ h4 {
     .carousel-blockqoute .carousel-indicators li.active, .carousel-blockqoute .carousel-indicators li:hover {
       background-color: #02baab; }
 
-.welcome-message {
-  top: 40%; }
-  .welcome-message h2 {
-    color: #fff;
-    font-size: 3vmax; }
-  .welcome-message span {
-    color: #02baab; }
-
 .colored-border {
   position: relative; }
   .colored-border:before {
@@ -7483,22 +7471,14 @@ h4 {
 .separate-line-color-bg:before {
   background: #fff; }
 
-.section-colored {
-  color: #fff; }
-
-.section-amber {
-  color: #fff;
-  background: #02baab; }
-
 .bg-image {
   background: 50% 50% no-repeat;
   background-size: cover; }
   .bg-image-latest-work {
     background-image: url("../../../images/bg-1680x740.png"); }
-  .bg-image-feedback {
-    background-image: url("../../../images/bg-1680x450.png"); }
 
 .card {
+  max-width: 280px;
   position: relative;
   border: none; }
   .card-img-overlay {
@@ -7513,7 +7493,6 @@ h4 {
   .card-bottom {
     background: #3d3d3d; }
   .card-text {
-    color: #02baab;
     font-size: 11px; }
   .card-img-top {
     -webkit-transition: all 0.5s ease;
@@ -7525,10 +7504,6 @@ h4 {
     opacity: 1; }
   .card:hover .card-text-wrap, .card:hover .like-numeral {
     display: none; }
-
-.like-numeral {
-  font-size: 11px;
-  color: #02baab; }
 
 .icon {
   position: relative; }
@@ -7599,5 +7574,32 @@ h4 {
     color: #02baab;
     font: 120px Georgia, sans-serif;
     content: "\201D"; }
-  .blockquote-footer {
-    color: #02baab; }
+
+.box-shadow-bottom {
+  position: relative;
+  -webkit-box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.75); }
+
+.accent-text {
+  color: #02baab; }
+
+.accent-bg {
+  background: #02baab; }
+
+.white-text {
+  color: #fff; }
+
+.top-header-bg-color {
+  background: #000000; }
+
+.top-header-text-color {
+  color: #85939f; }
+
+.font-vmax {
+  font-size: 3vmax; }
+
+.small-font-size {
+  font-size: 11px; }
+
+.position-top-40 {
+  top: 40%; }
