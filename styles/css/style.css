@@ -7277,13 +7277,21 @@ a:hover, a:focus {
   font-size: 1px;
   text-indent: -9999px; }
 
+h2 {
+  font: 300 4.28rem/3rem "Oxygen", sans-serif; }
+
+h3 {
+  font: 300 2rem/2.4rem "Oxygen", sans-serif; }
+
+h4 {
+  font: 300 1.6rem/2rem "Oxygen", sans-serif; }
+
 @font-face {
   font-family: "FontAwesome";
   src: url(../../fonts/FontAwesome/fontawesome-webfont.woff), url(../../fonts/FontAwesome/fontawesome-webfont.eot); }
 
 .top-header {
   background: #000000;
-  padding: 8px 0;
   color: #85939f; }
 
 .input::-webkit-input-placeholder {
@@ -7300,7 +7308,6 @@ a:hover, a:focus {
 
 .input-search {
   color: #85939f;
-  padding: 0 30px;
   font: 400 0.857rem/1.714rem "Lato", sans-serif;
   border: #434a50 solid 1px;
   background: none; }
@@ -7309,7 +7316,7 @@ a:hover, a:focus {
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  font-weight: 100;
+  font-weight: 300;
   text-transform: uppercase;
   padding: 5px 20px;
   border-radius: 0; }
@@ -7362,34 +7369,25 @@ a:hover, a:focus {
 .navbar-light .navbar-nav .nav-link {
   color: #fff; }
 
-.nav-item {
+.navbar-item {
   white-space: nowrap;
   font: 300 12px/35px "Oxygen", sans-serif;
   width: 15%;
   padding: 15px 12px; }
-  .nav-item a:link, .nav-item a:visited {
-    font-size: 12px; }
+  .navbar-item a:link, .navbar-item a:visited {
+    font-size: 0.786rem; }
 
-.navbar-brand {
-  margin-left: 20px; }
-
-.logo {
-  padding-bottom: 20px; }
-
-.carousel-inner {
-  height: calc(100vh - 100px);
+.carousel-top-inner {
+  height: calc(100vh - 120px);
   min-height: 650px; }
 
-.carousel-indicators {
-  margin-bottom: 20px; }
-  .carousel-indicators .active {
-    background-color: #02baab; }
+.carousel-indicators .active {
+  background-color: #02baab; }
 
 .welcome-message {
   top: 40%; }
   .welcome-message h2 {
     color: #fff;
-    font: 300 4.28rem/3rem "Oxygen", sans-serif;
     font-size: 3vmax; }
   .welcome-message span {
     color: #02baab; }
@@ -7470,39 +7468,38 @@ a:hover, a:focus {
 .separate-line-color-bg:before {
   background: #fff; }
 
-.colored-section {
+.section-colored {
   color: #fff; }
+
+.section-amber {
+  color: #fff;
+  background: #02baab; }
 
 .bg-image {
   background: 50% 50% no-repeat;
   background-size: cover; }
   .bg-image-latest-work {
     background-image: url("../../../images/bg-1680x740.png"); }
-
-.amber {
-  color: #fff;
-  background: #02baab; }
-
-.card-img-overlay {
-  padding: 0; }
-  .card-img-overlay .icon-list {
-    display: none; }
-  .card-img-overlay:hover .icon-list {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-
-.card-bottom {
-  background: #3d3d3d; }
-
-.card-text {
-  color: #02baab;
-  font-size: 11px; }
+  .bg-image-feedback {
+    background-image: url("../../../images/bg-1680x450.png"); }
 
 .card {
   position: relative;
   border: none; }
+  .card-img-overlay {
+    padding: 0; }
+    .card-img-overlay .icon-list {
+      display: none; }
+    .card-img-overlay:hover .icon-list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+  .card-bottom {
+    background: #3d3d3d; }
+  .card-text {
+    color: #02baab;
+    font-size: 11px; }
   .card-img-top {
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -7511,51 +7508,81 @@ a:hover, a:focus {
     border-radius: 0; }
   .card:hover .card-img-top {
     opacity: 1; }
-  .card:hover .card-text-wrap, .card:hover .like {
+  .card:hover .card-text-wrap, .card:hover .like-numeral {
     display: none; }
 
-.like {
+.like-numeral {
   font-size: 11px;
-  color: #02baab;
-  position: relative; }
-  .like:before {
-    color: #fff;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    bottom: 37px;
-    position: absolute;
-    font-family: FontAwesome,sans-serif;
-    content: "\f004"; }
+  color: #02baab; }
 
 .icon {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   position: relative; }
-  .icon-item {
-    border-radius: 50%;
-    background: #02baab;
-    padding: 20px;
-    text-align: center; }
   .icon:before {
-    width: 22px;
-    height: 22px;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
+    width: 25px;
+    height: 25px;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    z-index: 10;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     font-family: FontAwesome, sans-serif;
     position: absolute; }
+  .icon-circle {
+    -webkit-transition: background 1s ease;
+    -o-transition: background 1s ease;
+    transition: background 1s ease;
+    border-radius: 50%;
+    background: #02baab;
+    padding: 20px; }
+    .icon-circle:hover {
+      background: #fff;
+      color: #02baab; }
   .icon-heart:before {
     content: "\f004"; }
   .icon-search:before {
     content: "\f00e"; }
   .icon-link:before {
     content: "\f0c1"; }
+  .icon-like:before {
+    content: "\f004";
+    color: #fff;
+    top: 5px;
+    left: 30px; }
+  .icon-star:before {
+    content: "\f005"; }
+  .icon-trophy:before {
+    content: "\f091"; }
+  .icon-magic:before {
+    content: "\f0d0"; }
+  .icon-cloud:before {
+    content: "\f0ee"; }
+  .icon-features:before {
+    color: #02baab;
+    font-size: 40px;
+    width: 38px;
+    height: 38px;
+    top: 40px;
+    left: 0; }
+
+.features-item {
+  margin-right: 50px;
+  max-width: 400px; }
+  .features-item:nth-child(even) {
+    margin-right: 0; }
+
+.blockquote {
+  max-width: 600px;
+  padding-top: 100px;
+  position: relative; }
+  .blockquote:before {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: absolute;
+    top: 3%;
+    color: #02baab;
+    font: 120px Georgia, sans-serif;
+    content: "\201D"; }
+  .blockquote-footer {
+    color: #02baab; }

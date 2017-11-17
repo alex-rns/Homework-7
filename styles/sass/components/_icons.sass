@@ -1,0 +1,64 @@
+.icon
+  position: relative
+  &:before
+    width: 25px
+    height: 25px
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    font-family: FontAwesome, sans-serif
+    position: absolute
+
+  &-circle
+    transition: background 1s ease
+    border-radius: 50%
+    background: $accent-color
+    padding: 20px
+
+    &:hover
+      background: #fff
+      color: $accent-color
+
+  &-heart
+    &:before
+      content: "\f004"
+
+  &-search
+    &:before
+      content: "\f00e"
+
+  &-link
+    &:before
+      content: "\f0c1"
+
+  &-like
+    &:before
+      content: "\f004"
+      color: $white-text
+      top: 5px
+      left: 30px
+
+  &-star
+    &:before
+      content: "\f005"
+
+  &-trophy
+    &:before
+      content: "\f091"
+
+  &-magic
+    &:before
+      content: "\f0d0"
+
+  &-cloud
+    &:before
+      content: "\f0ee"
+
+  &-features
+    &:before
+      color: $accent-color
+      font-size: 40px
+      width: 38px
+      height: 38px
+      top: 40px
+      left: 0

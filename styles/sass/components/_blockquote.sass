@@ -1,0 +1,14 @@
+.blockquote
+  max-width: 600px
+  padding-top: 100px
+  position: relative
+  &:before
+    left: 50%
+    transform: translateX(-50%)
+    position: absolute
+    top: 3%
+    color: $accent-color
+    font: 120px Georgia, sans-serif
+    content: "\201D"
+  &-footer
+    color: $accent-color
