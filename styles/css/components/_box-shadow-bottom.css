@@ -1,0 +1,4 @@
+.box-shadow-bottom {
+  position: relative;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.75); }

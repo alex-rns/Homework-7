@@ -7355,6 +7355,8 @@ h4 {
         color: #02baab; }
   .button-icon i {
     padding-left: 15px; }
+  .button-no-bg {
+    background: none; }
 
 .navbar-wrap {
   background: #474747; }
@@ -7506,6 +7508,7 @@ h4 {
     display: none; }
 
 .icon {
+  text-align: center;
   position: relative; }
   .icon:before {
     width: 25px;
@@ -7527,6 +7530,18 @@ h4 {
     .icon-circle:hover {
       background: #fff;
       color: #02baab; }
+  .icon-top:before {
+    top: -8px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .icon-left:before {
+    left: 0; }
+  .icon-accent-color:before {
+    color: #02baab; }
+  .icon-white-color:before {
+    color: #fff; }
   .icon-heart:before {
     content: "\f004"; }
   .icon-search:before {
@@ -7534,10 +7549,7 @@ h4 {
   .icon-link:before {
     content: "\f0c1"; }
   .icon-like:before {
-    content: "\f004";
-    color: #fff;
-    top: 5px;
-    left: 30px; }
+    content: "\f004"; }
   .icon-star:before {
     content: "\f005"; }
   .icon-trophy:before {
@@ -7546,13 +7558,20 @@ h4 {
     content: "\f0d0"; }
   .icon-cloud:before {
     content: "\f0ee"; }
+  .icon-comments:before {
+    content: "\f086"; }
+  .icon-gears:before {
+    content: "\f085"; }
   .icon-features:before {
-    color: #02baab;
     font-size: 40px;
     width: 38px;
     height: 38px;
     top: 40px;
     left: 0; }
+  .icon-expirience:before {
+    font-size: 50px;
+    width: 38px;
+    height: 38px; }
 
 .features-item {
   margin-right: 50px;
@@ -7580,6 +7599,10 @@ h4 {
   -webkit-box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.75);
   box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.75); }
 
+.post a, .post a:link, .post a:visited {
+  color: #02baab;
+  font: 300 1rem/2.5rem "Oxygen", sans-serif; }
+
 .accent-text {
   color: #02baab; }
 
@@ -7603,3 +7626,17 @@ h4 {
 
 .position-top-40 {
   top: 40%; }
+
+.border-bottom {
+  position: relative; }
+  .border-bottom:before {
+    bottom: 0;
+    width: 90%;
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: #c3c3c3;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%); }
