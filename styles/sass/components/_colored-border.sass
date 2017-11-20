@@ -1,6 +1,5 @@
 .colored-border
   position: relative
-
   &:before
     content: ""
     width: 100%
@@ -8,10 +7,22 @@
     top: 0
     left: 0
 
-@each $color-list, $name-color in ($yellow, yellow), ($orange, orange), ($rose, rose), ($pink, pink), ($violet, violet), ($navy-blue, navy-blue), ($blue, blue)
+  @each $color in $color-list-header
+    $i: $i + 1
+    &:nth-child(#{$i}):before
+      border-top: 10px $color solid
 
-  .colored-border-#{$name-color}:before
-    border-top: 10px $color-list solid
+    &:nth-child(#{$i}) .nav-link:focus, &:nth-child(#{$i}) .nav-link:hover
+      color: $color
 
-  .navbar-light .colored-border-#{$name-color} .nav-link:focus, .navbar-light .colored-border-#{$name-color} .nav-link:hover
-    color: $color-list
+  &-footer
+    &:before
+      content: ""
+      width: 100%
+      position: absolute
+      top: 0
+      left: 0
+    @each $color in $color-list-footer
+      $i: $i + 1
+      &:nth-child(#{$i}):before
+        border-top: 15px $color solid

@@ -1,11 +1,12 @@
 .input
-
+  color: $top-header-text-color
+  font: $secondary-font
+  outline: none
   &::placeholder
     font: $default-font
     color: $top-header-text-color
 
   &-search
-    color: $top-header-text-color
-    font: $secondary-font
-    border: #434a50 solid 1px
+    border: darken($top-header-text-color, 20%) solid 1px
     background: none
+    color: lighten($top-header-text-color, 30%)
