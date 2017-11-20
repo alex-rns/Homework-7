@@ -7519,9 +7519,9 @@ h4 {
     width: 120px; }
 
 .icon {
-  text-align: center;
   position: relative; }
   .icon:before {
+    text-align: center;
     width: 25px;
     height: 25px;
     left: 50%;
@@ -7548,7 +7548,9 @@ h4 {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
   .icon-left:before {
-    left: 0; }
+    left: 10px; }
+  .icon-left-top:before {
+    top: 10px; }
   .icon-accent-color:before {
     color: #02baab; }
   .icon-white-color:before {
@@ -7583,6 +7585,22 @@ h4 {
     content: "\f095"; }
   .icon-rocket:before {
     content: "\f135"; }
+  .icon-flag:before {
+    content: "\f024"; }
+  .icon-envelope:before {
+    content: "\f003"; }
+  .icon-twitter:before {
+    content: "\f099"; }
+  .icon-facebook:before {
+    content: "\f09a"; }
+  .icon-youtoobe:before {
+    content: "\f167"; }
+  .icon-instagram:before {
+    content: "\f16d"; }
+  .icon-pinterest:before {
+    content: "\f231"; }
+  .icon-size-18:before {
+    font-size: 18px; }
   .icon-features:before {
     font-size: 40px;
     width: 38px;
@@ -7598,6 +7616,21 @@ h4 {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: 60px; }
+  .icon-social:before {
+    line-height: 1.6;
+    height: 50px;
+    width: 50px;
+    font-size: 30px; }
+  .icon-social-facebook-bg:before {
+    background: #415997; }
+  .icon-social-twitter-bg:before {
+    background: #35a0d1; }
+  .icon-social-youtoobe-bg:before {
+    background: #bd2e26; }
+  .icon-social-instagram-bg:before {
+    background: #7f5c48; }
+  .icon-social-pinterest-bg:before {
+    background: #9d0031; }
 
 .features-item {
   margin-right: 50px;
@@ -7619,6 +7652,8 @@ h4 {
     color: #02baab;
     font: 120px Georgia, sans-serif;
     content: "\201D"; }
+  .blockquote-footer-full-size {
+    font-size: 100%; }
 
 .box-shadow-bottom {
   position: relative;
@@ -7630,7 +7665,7 @@ h4 {
   font: 300 1rem/2.5rem "Oxygen", sans-serif; }
 
 .accent-text {
-  color: #02baab; }
+  color: #02baab !important; }
 
 .accent-bg {
   background: #02baab; }
@@ -7640,6 +7675,12 @@ h4 {
 
 .white-text {
   color: #fff; }
+
+.footer-bg-color {
+  background: #212a32; }
+
+.footer-second-color {
+  color: #86939f; }
 
 .top-header-bg-color {
   background: #000000; }
@@ -7655,6 +7696,9 @@ h4 {
 
 .font-size-11 {
   font-size: 11px; }
+
+.font-size-12 {
+  font-size: 12px; }
 
 .font-size-48 {
   font-size: 48px; }
@@ -7686,6 +7730,9 @@ h4 {
 
 .border-default {
   border: 1px #eeeeee solid; }
+
+.border-width-15:before {
+  border-width: 15px; }
 
 .expirience-item-dots:after {
   content: "...";

@@ -1,7 +1,7 @@
 .icon
-  text-align: center
   position: relative
   &:before
+    text-align: center
     width: 25px
     height: 25px
     left: 50%
@@ -28,7 +28,10 @@
 
   &-left
     &:before
-      left: 0
+      left: 10px
+    &-top
+      &:before
+        top: 10px
 
   &-accent-color
     &:before
@@ -98,7 +101,37 @@
     &:before
       content: "\f135"
 
+  &-flag
+    &:before
+      content: "\f024"
 
+  &-envelope
+    &:before
+      content: "\f003"
+
+  &-twitter
+    &:before
+      content: "\f099"
+
+  &-facebook
+    &:before
+      content: "\f09a"
+
+  &-youtoobe
+    &:before
+      content: "\f167"
+
+  &-instagram
+    &:before
+      content: "\f16d"
+
+  &-pinterest
+    &:before
+      content: "\f231"
+
+  &-size-18
+    &:before
+      font-size: 18px
 
   &-features
     &:before
@@ -116,3 +149,30 @@
       top: 50%
       transform: translate(-50%, -50%)
       font-size: 60px
+
+  &-social
+    &:before
+      line-height: 1.6
+      height: 50px
+      width: 50px
+      font-size: 30px
+
+    &-facebook-bg
+      &:before
+        background: #415997
+
+    &-twitter-bg
+      &:before
+        background: #35a0d1
+
+    &-youtoobe-bg
+      &:before
+        background: #bd2e26
+
+    &-instagram-bg
+      &:before
+        background: #7f5c48
+
+    &-pinterest-bg
+      &:before
+        background: #9d0031
