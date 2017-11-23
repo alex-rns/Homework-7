@@ -7382,6 +7382,10 @@ h5 {
       background: #fff; }
       .button-amber:hover:link, .button-amber:hover:visited {
         color: #02baab; }
+  .button-tag {
+    border: 1px solid #86939f;
+    color: #02baab;
+    padding: 0.4rem; }
   .button-no-bg {
     background: none; }
   .button-back-to-top {
@@ -7416,6 +7420,8 @@ h5 {
 .carousel-top-inner {
   height: calc(100vh - 110px);
   min-height: 450px; }
+  .carousel-top-inner-aside {
+    min-height: 190px; }
 
 .carousel-indicators .active {
   background-color: #02baab; }
@@ -7588,6 +7594,8 @@ h5 {
     left: 5px; }
   .icon-left-top:before {
     top: 10px; }
+  .icon-left-to-padding:before {
+    left: 25px; }
   .icon-right {
     padding-right: 38px; }
     .icon-right:before {
@@ -7612,6 +7620,14 @@ h5 {
     content: "\f2be"; }
   .icon-user-2:before {
     content: "\f007"; }
+  .icon-caret-right:before {
+    content: "\f0da"; }
+  .icon-quote-left:before {
+    content: "\f10d"; }
+  .icon-tags:before {
+    content: "\f02c"; }
+  .icon-keyboard-o:before {
+    content: "\f11c"; }
   .icon-clock:before {
     content: "\f017"; }
   .icon-commenting:before {
@@ -7655,6 +7671,8 @@ h5 {
   .icon-grey-circle:before {
     background: #3b4954;
     border-radius: 50%; }
+  .icon-light-grey:before {
+    color: #86939f; }
   .icon-features:before {
     font-size: 2.857em;
     width: 38px;
@@ -7774,6 +7792,101 @@ h5 {
   border-radius: 0;
   color: #000; }
 
+.aside-categories li {
+  line-height: 35px;
+  border-bottom: 1px solid #dbdfe3; }
+  .aside-categories li:last-child {
+    border: none; }
+  .aside-categories li a:before {
+    font-size: 25px; }
+
+.aside-recent-comments li {
+  border-bottom: 1px solid #dbdfe3; }
+  .aside-recent-comments li:last-child {
+    border: none; }
+
+.aside-latest-works {
+  overflow-x: hidden; }
+  .aside-latest-works .carousel-control-next, .aside-latest-works .carousel-control-prev {
+    top: 180px; }
+  .aside-latest-works .carousel-control-prev {
+    left: 60px; }
+  .aside-latest-works .carousel-control-next {
+    right: 60px; }
+
+.aside-tag-cloud a, .aside-tag-cloud a:link, .aside-tag-cloud a:visited {
+  color: #02baab; }
+
+.aside-tag-cloud a:hover, .aside-tag-cloud a:focus {
+  background: #02baab;
+  color: #fff; }
+
+.aside-tag-cloud li {
+  margin-bottom: 12px;
+  display: inline-block; }
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 7px;
+  height: 15px;
+  background-image: url("../../images/chevron-right.png"); }
+
+.carousel-control-prev-icon {
+  background-image: url("../../images/chevron-left.png"); }
+
+.social1, .social2, .social3, .social4, .social5 {
+  display: inline-block;
+  background: url("../../../images/sprite-social.png") no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+  width: 32px;
+  height: 32px; }
+
+.social1 {
+  background-position: -0px -0px; }
+
+.social2 {
+  background-position: -32px -0px; }
+
+.social3 {
+  background-position: -0px -32px; }
+
+.social4 {
+  background-position: -32px -32px; }
+
+.social5 {
+  background-position: -0px -64px; }
+
+.social-tooltip {
+  position: relative;
+  background: url("../../../images/tooltip.png") no-repeat;
+  display: inline-block;
+  width: 64px;
+  height: 32px; }
+  .social-tooltip:before {
+    padding-left: 5px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    line-height: 2.2;
+    content: "2.3M"; }
+
+.comments {
+  background: #ecf0f3; }
+  .comments input, .comments textarea {
+    width: 200px;
+    display: block;
+    border: none;
+    border-top: 1px #02baab solid; }
+  .comments textarea {
+    width: 100%;
+    resize: none; }
+  .comments-article {
+    background: #fff; }
+
 .border-bottom {
   position: relative; }
   .border-bottom:before {
@@ -7795,6 +7908,9 @@ h5 {
 
 .border-default {
   border: 1px #eeeeee solid; }
+
+.border-bottom-light-grey {
+  border-bottom: 1px solid #86939f; }
 
 .expirience-item {
   max-width: 300px; }
