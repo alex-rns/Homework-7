@@ -7306,6 +7306,9 @@ h3 {
 h4 {
   font: 300 1.6rem/2rem "Oxygen", sans-serif; }
 
+h5 {
+  font: 600 1.15rem/1.5rem "Oxygen", sans-serif; }
+
 .font-vmax {
   font-size: 3vmax; }
 
@@ -7513,7 +7516,9 @@ h4 {
   background: 50% 50% no-repeat;
   background-size: cover; }
   .bg-image-latest-work {
-    background-image: url("../../../images/bg-1680x740.png"); }
+    background-image: url("../../images/bg-1680x740.png"); }
+  .bg-image-blog-grid {
+    background-image: url("../../images/bg-1680x300.png"); }
 
 .card {
   border-radius: 0;
@@ -7580,7 +7585,7 @@ h4 {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%); }
   .icon-left:before {
-    left: 10px; }
+    left: 5px; }
   .icon-left-top:before {
     top: 10px; }
   .icon-right {
@@ -7605,6 +7610,12 @@ h4 {
     content: "\f077"; }
   .icon-user:before {
     content: "\f2be"; }
+  .icon-user-2:before {
+    content: "\f007"; }
+  .icon-clock:before {
+    content: "\f017"; }
+  .icon-commenting:before {
+    content: "\f27a"; }
   .icon-link:before {
     content: "\f0c1"; }
   .icon-like:before {
@@ -7641,6 +7652,9 @@ h4 {
     content: "\f231"; }
   .icon-size-18:before {
     font-size: 18px; }
+  .icon-grey-circle:before {
+    background: #3b4954;
+    border-radius: 50%; }
   .icon-features:before {
     font-size: 2.857em;
     width: 38px;
@@ -7679,11 +7693,11 @@ h4 {
   .features-item:nth-child(even) {
     margin-right: 0; }
 
-.blockquote {
+.blockquote-main {
   max-width: 600px;
   padding-top: 10%;
   position: relative; }
-  .blockquote:before {
+  .blockquote-main:before {
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -7693,7 +7707,7 @@ h4 {
     color: #02baab;
     font: 120px Georgia, sans-serif;
     content: "\201D"; }
-  .blockquote-footer-full-size {
+  .blockquote-main-footer-full-size {
     font-size: 100%; }
 
 .box-shadow-bottom {
@@ -7734,6 +7748,31 @@ h4 {
 
 .light-grey-color {
   color: #86939f; }
+
+.second-accent-color {
+  color: #c29c6e; }
+
+.breadcrumb {
+  background: none; }
+  .breadcrumb a, .breadcrumb a:link, .breadcrumb a:visited {
+    color: #86939f; }
+  .breadcrumb-item.active {
+    color: #86939f;
+    font-size: 12px; }
+
+.pagination a:link, .pagination a:visited {
+  line-height: 14px; }
+
+.page-link {
+  border: none; }
+
+.page-item {
+  color: #02baab; }
+
+.page-item.active .page-link {
+  background: #86939f;
+  border-radius: 0;
+  color: #000; }
 
 .border-bottom {
   position: relative; }
@@ -7876,4 +7915,6 @@ h4 {
   .post {
     max-width: 290px; }
   .footer-bottom p {
-    max-width: 150px; } }
+    max-width: 150px; }
+  .blog-grid-info ul {
+    margin-bottom: 15px; } }
