@@ -7318,6 +7318,9 @@ h4 {
 .big-font {
   font-size: 3rem; }
 
+.default-font {
+  font: 300 1rem/2.5rem "Oxygen", sans-serif; }
+
 .input {
   color: #86939f;
   font: 400 0.857rem/1.714rem "Lato", sans-serif;
@@ -7376,10 +7379,19 @@ h4 {
       background: #fff; }
       .button-amber:hover:link, .button-amber:hover:visited {
         color: #02baab; }
-  .button-icon i {
-    padding-left: 1.071rem; }
   .button-no-bg {
     background: none; }
+  .button-back-to-top {
+    background: inherit;
+    text-transform: capitalize; }
+    .button-back-to-top:before {
+      color: #02baab;
+      font-size: 15px; }
+    .button-back-to-top:hover {
+      border-color: #fff;
+      color: #fff; }
+      .button-back-to-top:hover:before {
+        color: #fff; }
 
 .navbar-wrap {
   background: #474747; }
@@ -7571,6 +7583,10 @@ h4 {
     left: 10px; }
   .icon-left-top:before {
     top: 10px; }
+  .icon-right {
+    padding-right: 38px; }
+    .icon-right:before {
+      left: 85%; }
   .icon-accent-color:before {
     color: #02baab; }
   .icon-white-color:before {
@@ -7583,6 +7599,10 @@ h4 {
     content: "\f004"; }
   .icon-search-plus:before {
     content: "\f00e"; }
+  .icon-chevron-right:before {
+    content: "\f054"; }
+  .icon-chevron-up:before {
+    content: "\f077"; }
   .icon-user:before {
     content: "\f2be"; }
   .icon-link:before {
@@ -7854,4 +7874,6 @@ h4 {
   .navbar-item {
     width: 100%; }
   .post {
-    max-width: 290px; } }
+    max-width: 290px; }
+  .footer-bottom p {
+    max-width: 150px; } }
