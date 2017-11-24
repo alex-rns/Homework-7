@@ -43,13 +43,27 @@
     &:before
       left: 85%
 
+  &-down
+    &:before
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 0
+
   &-accent-color
     &:before
       color: $accent-color
 
+  &-second-accent-color
+    &:before
+      color: $second-accent-color
+
   &-white-color
     &:before
       color: $white-text
+
+  &-size-2x
+    &:before
+      font-size: 24px
 
   &-search
     &:before
@@ -75,6 +89,10 @@
     &:before
       content: "\f077"
 
+  &-chevron-left
+    &:before
+      content: "\f053"
+
   &-user
     &:before
       content: "\f2be"
@@ -86,6 +104,10 @@
   &-caret-right
     &:before
       content: "\f0da"
+
+  &-caret-down
+    &:before
+      content: "\f0d7"
 
   &-quote-left
     &:before
@@ -99,6 +121,17 @@
     &:before
       content: "\f11c"
 
+  &-basket
+    &:before
+      content: "\f291"
+
+  &-heart-o
+    &:before
+      content: "\f08a"
+
+  &-log-out
+    &:before
+      content: "\f08b"
 
   &-clock
     &:before
@@ -175,10 +208,6 @@
   &-pinterest
     &:before
       content: "\f231"
-
-  &-size-18
-    &:before
-      font-size: 18px
 
   &-grey-circle
     &:before

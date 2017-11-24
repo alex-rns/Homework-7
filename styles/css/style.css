@@ -7441,6 +7441,12 @@ h5 {
     .carousel-blockqoute .carousel-indicators li.active, .carousel-blockqoute .carousel-indicators li:hover {
       background-color: #02baab; }
 
+.carousel-portfolio .carousel-control-prev-icon, .carousel-portfolio .carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  background-image: none; }
+
 .colored-border {
   position: relative; }
   .colored-border:before {
@@ -7600,10 +7606,20 @@ h5 {
     padding-right: 38px; }
     .icon-right:before {
       left: 85%; }
+  .icon-down:before {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 0; }
   .icon-accent-color:before {
     color: #02baab; }
+  .icon-second-accent-color:before {
+    color: #c29c6e; }
   .icon-white-color:before {
     color: #fff; }
+  .icon-size-2x:before {
+    font-size: 24px; }
   .icon-search:before {
     content: "\f002"; }
   .icon-pencil:before {
@@ -7616,18 +7632,28 @@ h5 {
     content: "\f054"; }
   .icon-chevron-up:before {
     content: "\f077"; }
+  .icon-chevron-left:before {
+    content: "\f053"; }
   .icon-user:before {
     content: "\f2be"; }
   .icon-user-2:before {
     content: "\f007"; }
   .icon-caret-right:before {
     content: "\f0da"; }
+  .icon-caret-down:before {
+    content: "\f0d7"; }
   .icon-quote-left:before {
     content: "\f10d"; }
   .icon-tags:before {
     content: "\f02c"; }
   .icon-keyboard-o:before {
     content: "\f11c"; }
+  .icon-basket:before {
+    content: "\f291"; }
+  .icon-heart-o:before {
+    content: "\f08a"; }
+  .icon-log-out:before {
+    content: "\f08b"; }
   .icon-clock:before {
     content: "\f017"; }
   .icon-commenting:before {
@@ -7666,8 +7692,6 @@ h5 {
     content: "\f16d"; }
   .icon-pinterest:before {
     content: "\f231"; }
-  .icon-size-18:before {
-    font-size: 18px; }
   .icon-grey-circle:before {
     background: #3b4954;
     border-radius: 50%; }
@@ -7902,6 +7926,15 @@ h5 {
       box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.3); }
   .comments-not-admin {
     margin-left: 35px; }
+
+.portfolio-filter li {
+  border-top: 5px solid #fff; }
+  .portfolio-filter li:hover {
+    border-top: 5px solid #eee; }
+
+.portfolio-filter .active-filter {
+  border-top: 5px solid #eee;
+  color: #000; }
 
 .border-bottom {
   position: relative; }
