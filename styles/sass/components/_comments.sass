@@ -1,5 +1,6 @@
 .comments
   background: #ecf0f3
+
   input, textarea
     width: 200px
     display: block
@@ -9,20 +10,25 @@
   textarea
     width: 100%
     resize: none
+
   &-article
     border: 5px solid $white-text
     background: $white
     cursor: pointer
     &:hover
       border: 5px solid #dee7ed
+
       .comments-reply
         display: block
+
     .comments-reply
       color: $accent-color
       display: none
+
   &-user
     a:link, a:visited
       font-size: 14px
+
       &:hover
         box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.3)
 
