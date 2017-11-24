@@ -1,6 +1,6 @@
 .social1, .social2, .social3, .social4, .social5
   display: inline-block
-  background: url('../../../images/sprite-social.png') no-repeat
+  background: url('../../images/sprite-social.png') no-repeat
   overflow: hidden
   text-indent: -9999px
   text-align: left
@@ -22,9 +22,13 @@
 .social5
   background-position: -0px -64px
 
+.social-list-portfolio
+    transform: scale(0.5)
+
+
 .social-tooltip
   position: relative
-  background: url('../../../images/tooltip.png') no-repeat
+  background: url('../../images/tooltip.png') no-repeat
   display: inline-block
   width: 64px
   height: 32px
@@ -36,3 +40,6 @@
     transform: translateX(-50%)
     line-height: 2.2
     content: "2.3M"
+  &-portfolio
+    &:before
+      content: "832"

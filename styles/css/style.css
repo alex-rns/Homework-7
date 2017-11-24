@@ -7399,12 +7399,23 @@ h5 {
       color: #fff; }
       .button-back-to-top:hover:before {
         color: #fff; }
+  .button-buy {
+    border: 3px solid #ffae00;
+    background: inherit;
+    color: #ffae00;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 0.5rem 1.2em; }
+    .button-buy:hover {
+      background: #ffae00;
+      color: #fff; }
 
 .navbar-wrap {
   background: #474747; }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #fff; }
+  color: #fff;
+  text-align: center; }
 
 .navbar-item {
   white-space: nowrap;
@@ -7441,11 +7452,30 @@ h5 {
     .carousel-blockqoute .carousel-indicators li.active, .carousel-blockqoute .carousel-indicators li:hover {
       background-color: #02baab; }
 
-.carousel-portfolio .carousel-control-prev-icon, .carousel-portfolio .carousel-control-next-icon {
+.carousel-portfolio .carousel-control-prev-icon, .carousel-portfolio .carousel-control-next-icon, .carousel-description .carousel-control-prev-icon, .carousel-description .carousel-control-next-icon {
+  display: inline-block;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   width: 40px;
   height: 40px;
   background: #fff;
   background-image: none; }
+  .carousel-portfolio .carousel-control-prev-icon:hover, .carousel-portfolio .carousel-control-next-icon:hover, .carousel-description .carousel-control-prev-icon:hover, .carousel-description .carousel-control-next-icon:hover {
+    background: #ffae00; }
+    .carousel-portfolio .carousel-control-prev-icon:hover:before, .carousel-portfolio .carousel-control-next-icon:hover:before, .carousel-description .carousel-control-prev-icon:hover:before, .carousel-description .carousel-control-next-icon:hover:before {
+      color: #fff; }
+
+.carousel-description .carousel-control-prev-icon, .carousel-description .carousel-control-next-icon {
+  border: 1px solid #f5f5f6; }
+  .carousel-description .carousel-control-prev-icon:hover, .carousel-description .carousel-control-next-icon:hover {
+    border: 1px solid #ffae00; }
+
+.carousel-description .carousel-control-next, .carousel-description .carousel-control-prev {
+  height: 40px; }
+
+.carousel-description .carousel-control-next {
+  right: 133px; }
 
 .colored-border {
   position: relative; }
@@ -7615,7 +7645,7 @@ h5 {
   .icon-accent-color:before {
     color: #02baab; }
   .icon-second-accent-color:before {
-    color: #c29c6e; }
+    color: #ffae00; }
   .icon-white-color:before {
     color: #fff; }
   .icon-size-2x:before {
@@ -7636,6 +7666,8 @@ h5 {
     content: "\f053"; }
   .icon-user:before {
     content: "\f2be"; }
+  .icon-check-square-o:before {
+    content: "\f046"; }
   .icon-user-2:before {
     content: "\f007"; }
   .icon-caret-right:before {
@@ -7792,7 +7824,7 @@ h5 {
   color: #86939f; }
 
 .second-accent-color {
-  color: #c29c6e; }
+  color: #ffae00; }
 
 .breadcrumb {
   background: none; }
@@ -7859,7 +7891,7 @@ h5 {
 
 .social1, .social2, .social3, .social4, .social5 {
   display: inline-block;
-  background: url("../../../images/sprite-social.png") no-repeat;
+  background: url("../../images/sprite-social.png") no-repeat;
   overflow: hidden;
   text-indent: -9999px;
   text-align: left;
@@ -7881,9 +7913,14 @@ h5 {
 .social5 {
   background-position: -0px -64px; }
 
+.social-list-portfolio {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5); }
+
 .social-tooltip {
   position: relative;
-  background: url("../../../images/tooltip.png") no-repeat;
+  background: url("../../images/tooltip.png") no-repeat;
   display: inline-block;
   width: 64px;
   height: 32px; }
@@ -7897,6 +7934,8 @@ h5 {
     transform: translateX(-50%);
     line-height: 2.2;
     content: "2.3M"; }
+  .social-tooltip-portfolio:before {
+    content: "832"; }
 
 .comments {
   background: #ecf0f3; }
@@ -7996,7 +8035,9 @@ h5 {
   .expirience-item-dots:after {
     letter-spacing: -2px;
     font-size: 3.286em;
-    right: -12px; } }
+    right: -12px; }
+  .carousel-description .carousel-control-next {
+    right: 87px; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -8015,7 +8056,9 @@ h5 {
       position: absolute;
       top: 370px;
       left: 30px;
-      color: #fff; } }
+      color: #fff; }
+  .carousel-description .carousel-control-next {
+    right: 0; } }
 
 @media only screen and (max-width: 767px) {
   aside {
@@ -8023,6 +8066,8 @@ h5 {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
+  .navbar-item {
+    font-size: 0.625rem; }
   input {
     font-size: 0.563rem; }
   ::-webkit-input-placeholder {
