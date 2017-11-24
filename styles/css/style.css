@@ -7467,7 +7467,7 @@ h5 {
       color: #fff; }
 
 .carousel-description .carousel-control-prev-icon, .carousel-description .carousel-control-next-icon {
-  border: 1px solid #f5f5f6; }
+  border: 1px solid #eaebec; }
   .carousel-description .carousel-control-prev-icon:hover, .carousel-description .carousel-control-next-icon:hover {
     border: 1px solid #ffae00; }
 
@@ -7781,8 +7781,9 @@ h5 {
     color: #02baab;
     font: 120px Georgia, sans-serif;
     content: "\201D"; }
-  .blockquote-main-footer-full-size {
-    font-size: 100%; }
+
+.blockquote-color {
+  color: #c69c6d; }
 
 .box-shadow-bottom {
   position: relative;
@@ -7999,6 +8000,9 @@ h5 {
 
 .border-bottom-light-grey {
   border-bottom: 1px solid #86939f; }
+
+.border-bottom-super-lightgrey {
+  border-bottom: 1px solid #eaebec; }
 
 .expirience-item {
   max-width: 300px; }
