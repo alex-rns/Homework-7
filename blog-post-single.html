@@ -75,7 +75,7 @@
       <h3 class="mb-3">Blog post tittle goes here</h3>
 
       <div class="row justify-content-between align-items-center px-3">
-        <div class="blog-grid-info light-grey-color">
+        <div class="blog-grid-info light-grey-color mb-2">
           <ul class="row">
             <li class="icon icon-user-2 icon-left icon-grey-circle pl-4 ml-4">
               <a href="#">by Alex Poushkin</a>
@@ -89,7 +89,7 @@
           </ul>
         </div>
 
-        <nav class="breadcrumb p-0 m-0">
+        <nav class="breadcrumb p-0 mb-2">
           <a class="breadcrumb-item" href="index.html">Home</a>
           <a class="breadcrumb-item" href="#">Shortcodes</a>
           <a class="breadcrumb-item" href="#">Typography</a>
@@ -133,9 +133,15 @@
 
           <div class="container-fluid mb-5">
             <ul class="row justify-content-between">
-              <li><img src="images/bg-210x160.png" alt="210x160"></li>
-              <li><img src="images/bg-210x160.png" alt="210x160"></li>
-              <li><img src="images/bg-210x160.png" alt="210x160"></li>
+              <li class="mb-3 mx-auto">
+                <img class="img-fluid" src="images/bg-210x160.png" alt="210x160">
+              </li>
+              <li class="mb-3 mx-auto">
+                <img class="img-fluid" src="images/bg-210x160.png" alt="210x160">
+              </li>
+              <li class="mb-3 mx-auto">
+                <img class="img-fluid" src="images/bg-210x160.png" alt="210x160">
+              </li>
             </ul>
           </div>
 
@@ -339,18 +345,18 @@
         <form class="px-2 mb-5" action="">
           <div class="row justify-content-between mb-3">
             <label>Name
-              <input type="text">
+              <input class="px-3" type="text" required>
             </label>
             <label>Email
-              <input type="email">
+              <input class="px-3" type="email">
             </label>
             <label>Website (optional)
-              <input type="email">
+              <input class="px-3" type="email">
             </label>
           </div>
           <div class="row mb-4">
             <p>Message</p>
-            <textarea rows="5" name="comment"></textarea>
+            <textarea class="px-3" rows="5" name="comment" required></textarea>
           </div>
           <button class="submit button button-color pull-right">Add comment</button>
         </form>
@@ -358,14 +364,33 @@
 
         <h5 class="pt-5">24 comments</h5>
         <div class="comment-list my-4">
-          <article class="comments-article p-4">
-            <div class="comment-user row justify-content-between">
-              <a href="#">Administrator</a>
-              <a href="#">Reply</a>
+          <article class="comments-article p-4 mb-5">
+            <div class="comments-user row justify-content-between px-3">
+              <a class="accent-text" href="#">Administrator</a>
+              <a class="comments-reply" href="#">Reply</a>
             </div>
-            <p>September 17, 2013 @ 1:38 pm</p>
+            <p class="light-grey-color border-bottom-light-grey py-2 mb-2">September 17, 2013 &#64; 1:38 pm</p>
             <p>Small batch sartorial, single-origin coffee food truck tousled sed swag hella synth bitters next level consectetur Helvetica twee. Craft beer ea tofu sint reprehenderit cornhole, occaecat put a bird on it single-origin coffee Tonx. Small batch 3 wolf moon ad, adipisicing fap cornhole.</p>
           </article>
+
+          <article class="comments-article comments-not-admin p-4 mb-5">
+            <div class="comments-user row justify-content-between px-3">
+              <a class="accent-text" href="#">Alina</a>
+              <a class="comments-reply" href="#">Reply</a>
+            </div>
+            <p class="light-grey-color border-bottom-light-grey py-2 mb-2">September 17, 2013 &#64; 1:38 pm</p>
+            <p>Small batch sartorial, single-origin coffee food truck tousled sed swag hella synth bitters next level consectetur Helvetica twee. Craft beer ea tofu sint reprehenderit cornhole, occaecat put a bird on it single-origin coffee Tonx. Small batch 3 wolf moon ad, adipisicing fap cornhole.</p>
+          </article>
+
+          <article class="comments-article p-4 mb-5">
+            <div class="comments-user row justify-content-between px-3">
+              <a class="accent-text" href="#">Administrator</a>
+              <a class="comments-reply" href="#">Reply</a>
+            </div>
+            <p class="light-grey-color border-bottom-light-grey py-2 mb-2">September 17, 2013 &#64; 1:38 pm</p>
+            <p>Small batch sartorial, single-origin coffee food truck tousled sed swag hella synth bitters next level consectetur Helvetica twee. Craft beer ea tofu sint reprehenderit cornhole, occaecat put a bird on it single-origin coffee Tonx. Small batch 3 wolf moon ad, adipisicing fap cornhole.</p>
+          </article>
+
         </div>
 
 
